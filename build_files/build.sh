@@ -19,11 +19,11 @@ enable_copr() {
 
 enable_copr pgdev/ghostty
 
-dnf5 install -y --setopt=install_weak_deps=False \
-    ghostty
-
 # ncurses-term dependency is in conflict with ghostty so I'm getting rid of fish here
 dnf5 remove -y fish
+
+dnf5 install -y --setopt=install_weak_deps=False \
+    ghostty
 
 # this installs a package from fedora repos
 dnf5 install -y \
