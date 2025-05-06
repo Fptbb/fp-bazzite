@@ -17,7 +17,7 @@ env:
   IMAGE_NAME: "${{ github.event.repository.name }}"  # the name of the image produced by this build, matches repo names
   IMAGE_DESC: "A custom build for personal need"
   IMAGE_REGISTRY: "ghcr.io/${{ github.repository_owner }}"  # do not edit
-  ARTIFACTHUB_LOGO_URL: "https://raw.githubusercontent.com/Fptbb/fp-bazzite/refs/heads/main/.github/logo.png"  # You should put your own image here so that you get a fancy profile image on https://artifacthub.io/!
+  ARTIFACTHUB_LOGO_URL: "https://raw.githubusercontent.com/Fptbb/fp-os/refs/heads/main/.github/logo.png"  # You should put your own image here so that you get a fancy profile image on https://artifacthub.io/!
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref || github.run_id }}-${{ inputs.brand_name}}-${{ inputs.stream_name }}
