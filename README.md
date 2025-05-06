@@ -8,5 +8,6 @@ Summary:
 - Fedora Atomic Kinoite (so, KDE/Plasma desktop)
 - Bazzite
 - Nvidia
-- Other things I'm too lazy to 
+- Other things I'm too lazy to put here
+
 *You can change this to some other base image if you want in de `Containerfile`*

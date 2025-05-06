@@ -1,6 +1,14 @@
 #!/bin/bash
 
+RELEASE="$(rpm -E %fedora)"
 set -ouex pipefail
+
+enable_copr() {
+    repo="$1"
+    repo_with_dash="${repo/\//-}"
+    wget "https://copr.fedorainfracloud.org/coprs/${repo}/repo/fedora-${RELEASE}/${repo_with_dash}-fedora-${RELEASE}.repo" \
+        -O "/etc/yum.repos.d/_copr_${repo_with_dash}.repo"
+}
 
 ### Install packages
 
@@ -9,8 +17,18 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
+enable_copr pgdev/ghostty
+
+dnf5 install -y --setopt=install_weak_deps=False \
+    ghostty
+
+# ncurses-term dependency is in conflict with ghostty so I'm getting rid of fish here
+dnf5 remove -y fish
+
 # this installs a package from fedora repos
-dnf5 install -y tmux 
+dnf5 install -y \
+    tmux \
+    kleopatra
 
 # Use a COPR Example:
 #
