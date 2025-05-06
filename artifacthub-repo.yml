@@ -1,5 +1,6 @@
 # Index the image on https://artifacthub.io/
 # https://artifacthub.io/docs/topics/repositories/#verified-publisher
+repositoryID: cb485fa7-fc9f-4435-bae3-e5c5a62dcf99
 owners: 
   - name: fptbb
     email: lucas@fptbb.com
