@@ -1,4 +1,4 @@
-# FpOS
+# Fp OS
 This is my own version of Kinoite/Bazzite based on the Ublue-OS version.
 Just some extra apps, most of my apps I install with flatpak, so everything else will go here, and some default configs
 
