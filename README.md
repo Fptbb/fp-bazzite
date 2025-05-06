@@ -8,6 +8,8 @@ Summary:
 - Fedora Atomic Kinoite (so, KDE/Plasma desktop)
 - Bazzite
 - Nvidia
-- Other things I'm too lazy to put here
+- Other things I'm too lazy to put here (Check the files).
 
 *You can change this to some other base image if you want in de `Containerfile`*
+
+*Switch using `sudo bootc switch ghcr.io/fptbb/fp-bazzite:latest` and check using `sudo bootc status`*
