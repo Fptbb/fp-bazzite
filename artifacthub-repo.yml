@@ -1,8 +1,5 @@
-# This file is completely optional, but if you want to index your image on https://artifacthub.io/ you can 
-# Sign up and add the Repository ID to the right field. Owners fields are optional.
-# Examples: https://artifacthub.io/packages/search?ts_query_web=ublue&sort=relevance&page=1 
-
-repositoryID: 5d4c3ba6-2023-4bb5-9cc4-ef5c73ace2b2 # Fill in with your own credentials 
-owners: # (optional, used to claim repository ownership)
+# Index the image on https://artifacthub.io/
+# https://artifacthub.io/docs/topics/repositories/#verified-publisher
+owners: 
   - name: fptbb
     email: lucas@fptbb.com
