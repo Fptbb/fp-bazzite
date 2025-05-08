@@ -30,10 +30,6 @@ dnf5 install -y \
     tmux \
     kleopatra
 
-### Some useful changes
-# Default to powersave mode
-echo "powersave" > /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
-
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
