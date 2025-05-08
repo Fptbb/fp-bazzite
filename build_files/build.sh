@@ -30,9 +30,6 @@ dnf5 install -y \
     tmux \
     kleopatra
 
-### Setup NIX
-sh <(curl -L https://nixos.org/nix/install) --daemon
-
 ### Some useful changes
 # Default to powersave mode
 echo "powersave" > /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
@@ -47,4 +44,3 @@ echo "powersave" > /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-systemctl enable nix-daemon.service
