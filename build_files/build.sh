@@ -17,19 +17,14 @@ enable_copr() {
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-enable_copr pgdev/ghostty
-
-# ncurses-term dependency is in conflict with ghostty so I'm getting rid of fish here
-dnf5 remove -y fish
-
-dnf5 install -y --setopt=install_weak_deps=False \
-    ghostty
+# enable_copr some/coprrepo
 
 # this installs a package from fedora repos
 dnf5 install -y \
     tmux \
     kleopatra \
-    gnome-disk-utility
+    gnome-disk-utility \
+    kitty
 
 # Use a COPR Example:
 #
