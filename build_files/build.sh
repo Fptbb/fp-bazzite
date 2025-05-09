@@ -24,7 +24,8 @@ dnf5 install -y \
     tmux \
     kleopatra \
     gnome-disk-utility \
-    kitty
+    kitty \
+    zsh
 
 # Use a COPR Example:
 #
