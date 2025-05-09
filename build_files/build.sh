@@ -2,7 +2,6 @@
 
 RELEASE="$(rpm -E %fedora)"
 set -ouex pipefail
-mkdir -p "/root/.gnupg"
 
 ### Set default hostname
 echo "fp-pc" > /usr/etc/hostname
