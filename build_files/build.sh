@@ -41,6 +41,7 @@ enable_copr() {
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # enable_copr some/coprrepo
+enable_copr  bigjapka/VeraCrypt
 
 # this installs a package from fedora repos
 dnf5 install -y \
@@ -50,7 +51,8 @@ dnf5 install -y \
     kitty \
     zsh \
     gnome-calculator \
-    powerline-fonts
+    powerline-fonts \
+    veracrypt
 
 # Use a COPR Example:
 #
