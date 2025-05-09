@@ -3,9 +3,6 @@
 RELEASE="$(rpm -E %fedora)"
 set -ouex pipefail
 
-### Set default hostname
-echo "fp-pc" > /usr/etc/hostname
-
 ### Install Fonts
 
 FONT_DIR="/usr/share/fonts/nerdfonts"
