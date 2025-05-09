@@ -28,7 +28,8 @@ dnf5 install -y --setopt=install_weak_deps=False \
 # this installs a package from fedora repos
 dnf5 install -y \
     tmux \
-    kleopatra
+    kleopatra \
+    gnome-disk-utility
 
 # Use a COPR Example:
 #
