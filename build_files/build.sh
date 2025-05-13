@@ -52,7 +52,8 @@ dnf5 install -y \
     zsh \
     gnome-calculator \
     powerline-fonts \
-    veracrypt
+    veracrypt \
+    firejail
 
 # Use a COPR Example:
 #
