@@ -1,5 +1,5 @@
 export repo_organization := env("GITHUB_REPOSITORY_OWNER", "fptbb")
-export image_name := env("IMAGE_NAME", "fpos")
+export image_name := env("IMAGE_NAME", "fp-os")
 export centos_version := env("CENTOS_VERSION", "stream10")
 export fedora_version := env("CENTOS_VERSION", "41")
 export default_tag := env("DEFAULT_TAG", "latest")
