@@ -51,6 +51,15 @@ sudo bootc switch --ostree-remote=ghcr ghcr.io/fptbb/fp-os:latest
 Then reboot. To check the status: `sudo bootc status`.
 An ISO can also be built (see building section) which uses a kickstart (`iso.toml`) to automatically rebase to this image upon installation.
 
+## <picture><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4da/webp/emoji_u1f4da.webp" alt="📚" width="22" height="22"></picture> Acknowledgements and Resources
+
+This project wouldn't be what it is without the inspiration and code from various other awesome projects and people in the community. Big thanks to:
+
+*   [**Venefilyn/veneos**](https://github.com/Venefilyn/veneos)
+*   [**astrovm/amyos**](https://github.com/astrovm/amyos)
+*   [**m2Giles/m2os**](https://github.com/m2Giles/m2os)
+*   [**ublue-os/bazzite**](https://github.com/ublue-os/bazzite)
+
 ## <picture><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4c4/webp/emoji_u1f4c4.webp" alt="📄" width="22" height="22"></picture> License
 
 This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
