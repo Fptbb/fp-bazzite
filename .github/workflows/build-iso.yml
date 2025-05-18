@@ -73,8 +73,6 @@ jobs:
         with:
           bootc-image-builder-image: ghcr.io/centos-workstation/bootc-image-builder:latest
           use-librepo: true
-          variant: 'Kinoite'
-          enrollment_password: 'universalblue'
           config-file: ./iso.toml
           image: ${{ env.IMAGE_REGISTRY }}:${{ env.DEFAULT_TAG }}
 
