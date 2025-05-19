@@ -64,7 +64,7 @@ dnf5 install -y \
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-
+systemctl disable NetworkManager-wait-online.service
 
 ### Cleaning
 # Clean package manager cache
