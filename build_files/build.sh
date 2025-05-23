@@ -62,7 +62,7 @@ dnf5 install -y \
 # dnf5 -y copr disable ublue-os/staging
 
 # Try on something cool.
-sudo plymouth-set-default-theme --rebuild-initrd
+plymouth-set-default-theme --rebuild-initrd
 
 #### Example for enabling a System Unit File
 
