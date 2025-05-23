@@ -61,9 +61,6 @@ dnf5 install -y \
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-# Try on something cool.
-plymouth-set-default-theme --rebuild-initrd
-
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
