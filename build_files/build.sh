@@ -49,7 +49,7 @@ dnf5 config-manager addrepo --id="nordvpn" \
     --set=enabled=1 \
     --overwrite
 
-dnf5 install -y --nogpgcheck nordvpn
+dnf5 install -y --nogpgcheck nordvpn-gui
 
 # enable_copr some/coprrepo
 enable_copr  bigjapka/VeraCrypt
