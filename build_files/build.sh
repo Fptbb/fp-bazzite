@@ -51,7 +51,6 @@ dnf5 config-manager addrepo --id="nordvpn" \
 
 dnf5 install -y --nogpgcheck nordvpn
 systemctl enable nordvpnd
-groupadd nordvpn
 usermod -aG nordvpn $USER
 
 # enable_copr some/coprrepo
