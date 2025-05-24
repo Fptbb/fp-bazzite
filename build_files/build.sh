@@ -50,6 +50,9 @@ dnf5 config-manager addrepo --id="nordvpn" \
     --overwrite
 
 dnf5 install -y --nogpgcheck nordvpn
+systemctl enable nordvpnd
+groupadd nordvpn
+usermod -aG nordvpn $USER
 
 # enable_copr some/coprrepo
 enable_copr  bigjapka/VeraCrypt
@@ -76,7 +79,6 @@ dnf5 install -y \
 
 systemctl enable podman.socket
 systemctl disable NetworkManager-wait-online.service
-systemctl enable nordvpnd
 
 ### Cleaning
 # Clean package manager cache
