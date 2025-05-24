@@ -40,6 +40,17 @@ enable_copr() {
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
+### Add NordVPN repo and install
+
+rpm --import https://repo.nordvpn.com/gpg/nordvpn_public.asc
+
+dnf5 config-manager addrepo --id="nordvpn" \
+    --set=baseurl="https://repo.nordvpn.com/yum/nordvpn/centos/$(uname -m)" \
+    --set=enabled=1 \
+    --overwrite
+
+dnf5 install -y --nogpgcheck nordvpn
+
 # enable_copr some/coprrepo
 enable_copr  bigjapka/VeraCrypt
 
