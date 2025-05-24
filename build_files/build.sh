@@ -76,6 +76,7 @@ dnf5 install -y \
 
 systemctl enable podman.socket
 systemctl disable NetworkManager-wait-online.service
+systemctl enable nordvpnd
 
 ### Cleaning
 # Clean package manager cache
